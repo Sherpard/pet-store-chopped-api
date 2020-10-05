@@ -1,0 +1,24 @@
+tags:
+- user
+summary: Get user by user name
+operationId: getUserByName
+parameters:
+- name: username
+  in: path
+  description: 'The name that needs to be fetched. Use user1 for testing. '
+  required: true
+  schema:
+    type: string
+responses:
+  200:
+    description: successful operation
+    content:
+      application/json:
+        schema:
+          $ref: '../../schemas/User.yaml'
+  400:
+    description: Invalid username supplied
+    content: {}
+  404:
+    description: User not found
+    content: {}

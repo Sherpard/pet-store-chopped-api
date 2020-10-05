@@ -1,0 +1,15 @@
+description: This contains values of UserCreate and User
+allOf:
+  - $ref: './UserCreate.yaml'
+  - properties:
+      id:
+        type: integer
+        format: int64
+      userStatus:
+        type: integer
+        format: int64
+        description: User Status
+    type: object
+    required:
+      - id
+      - userStatus

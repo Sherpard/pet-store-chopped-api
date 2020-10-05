@@ -1,0 +1,15 @@
+tags:
+  - pet
+summary: Add a new pet to the store
+operationId: addPet
+requestBody:
+  required: true
+  description: Pet object that needs to be added to the store
+  content:
+    application/json:
+      schema:
+        $ref: "../../schemas/Pet.yaml"
+responses:
+  405:
+    description: Invalid input
+    content: {}

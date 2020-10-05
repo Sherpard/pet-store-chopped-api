@@ -1,0 +1,26 @@
+/pets:
+  put:
+    $ref: "./pet/put-pet.yaml"
+  post:
+    $ref: "./pet/post-pet.yaml"
+  get:
+    $ref: "./pet/get-all-pet.yaml"
+/pets/{petId}:
+  get:
+    $ref: "./pet/get-pet.yaml"
+  delete:
+    $ref: "./pet/delete-pet.yaml"
+/store:
+  post:
+    $ref: "./store/post-store.yaml"
+/store/{orderId}:
+  get:
+    $ref: "./store/get-store.yaml"
+  delete:
+    $ref: "./store/delete-store.yaml"
+/user:
+  post:
+    $ref: "./user/post-user.yaml"
+/user/{username}:
+  get:
+    $ref: "./user/get-user.yaml"

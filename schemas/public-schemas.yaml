@@ -1,0 +1,12 @@
+Pet:
+  $ref: "./Pet.yaml"
+Tag:
+  $ref: "./Tag.yaml"
+Order:
+  $ref: "./Order.yaml"
+UserCreate:
+  $ref: "./UserCreate.yaml"
+User:
+  $ref: "./User.yaml"
+Error:
+  $ref: "./Error.yaml"

@@ -1,0 +1,21 @@
+tags:
+  - pet
+summary: Update an existing pet
+operationId: updatePet
+requestBody:
+  description: Pet object that needs to be added to the store
+  content:
+    application/json:
+      schema:
+        $ref: "../../schemas/Pet.yaml"
+  required: true
+responses:
+  400:
+    description: Invalid ID supplied
+    content: {}
+  404:
+    description: Pet not found
+    content: {}
+  405:
+    description: Validation exception
+    content: {}

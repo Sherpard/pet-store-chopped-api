@@ -1,0 +1,21 @@
+tags:
+- store
+summary: Place an order for a pet
+operationId: placeOrder
+requestBody:
+  description: order placed for purchasing the pet
+  content:
+    '*/*':
+      schema:
+        $ref: "../../schemas/Order.yaml"
+  required: true
+responses:
+  200:
+    description: successful operation
+    content:
+      application/json:
+        schema:
+          $ref: "../../schemas/Order.yaml"
+  400:
+    description: Invalid Order
+    content: {}
